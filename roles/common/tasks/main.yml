@@ -1,3 +1,9 @@
 ---
 - name: remove sasl
   apt: name=sasl2-bin state=absent purge=yes update_cache=no
+
+- name: remove apache
+  apt: name=apache* state=absent purge=yes update_cache=no
+
+- name: remove xinetd
+  apt: name=xinetd state=absent purge=yes update_cache=no
