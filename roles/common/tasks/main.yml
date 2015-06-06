@@ -1,0 +1,3 @@
+---
+- name: remove sasl
+  apt: name=sasl2-bin state=absent purge=yes update_cache=no
