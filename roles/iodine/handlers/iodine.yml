@@ -1,0 +1,4 @@
+---
+handlers:
+- name: restart iodine
+  service: name=iodined enabled=yes state=restarted
